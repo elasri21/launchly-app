@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Launchly - Setup Instructions</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 960px;
+      margin: 40px auto;
+      padding: 20px;
+      color: #333;
+      line-height: 1.6;
+    }
+    h1, h2 {
+      color: #00bfa6;
+    }
+    pre {
+      background-color: #f4f4f4;
+      padding: 10px;
+      border-left: 4px solid #00bfa6;
+      overflow-x: auto;
+    }
+    code {
+      font-family: Consolas, monospace;
+    }
+    a {
+      color: #00bfa6;
+    }
+  </style>
+</head>
+<body>
+  <h1>Launchly HTML Template – Setup & Customization Guide</h1>
+  <p>Thank you for choosing Launchly! This guide will help you edit and customize your landing page quickly and easily.</p>
+
+  <h2>📁 Folder Structure</h2>
+  <pre><code>launchly/
+├── css/
+│   └── rule.css
+├── img/
+│   └── images and icons
+├── js/
+│   └── main.js
+├── index.html
+└── instructions.html
+</code></pre>
+
+  <h2>🛠 How to Edit Text</h2>
+  <p>Open <code>index.html</code> in a code editor. Locate the section you want to change and replace the placeholder text.</p>
+  <pre><code>&lt;h1&gt;Supercharge Your Startup Launch&lt;/h1&gt;</code></pre>
+  <p>➡ Change this to your own title or message.</p>
+
+  <h2>🎨 How to Change Colors & Fonts</h2>
+  <p>Colors and fonts are managed via CSS variables in <code>css/rule.css</code>. You can edit them in the <code>:root</code> section at the top of the file:</p>
+  <pre><code>:root {
+  --color-primary: #00bfa6;
+  --font-primary: 'Poppins', sans-serif;
+}</code></pre>
+
+  <h2>🖼 How to Replace Images</h2>
+  <p>Place your images in the <code>img/</code> folder and update the <code>src</code> attributes in <code>index.html</code> like this:</p>
+  <pre><code>&lt;img src="img/your-image.png" alt="Description" /&gt;</code></pre>
+
+  <h2>🔗 Changing Navigation Links</h2>
+  <p>Navigation items link to sections using <code>id</code>s. For example:</p>
+  <pre><code>&lt;a href="#features"&gt;Features&lt;/a&gt;</code></pre>
+  <p>Ensure your section has the corresponding <code>id</code>:</p>
+  <pre><code>&lt;section id="features"&gt;...&lt;/section&gt;</code></pre>
+
+  <h2>📱 Responsive Design</h2>
+  <p>Launchly is fully responsive and works on all screen sizes. You can test responsiveness using browser dev tools or real devices.</p>
+
+  <h2>📩 Contact Form Behavior</h2>
+  <p>This template includes a styled form, but you'll need to connect it to a service like Formspree, EmailJS, or your own backend to make it functional.</p>
+
+  <h2>💡 Additional Tips</h2>
+  <ul>
+    <li>Use <strong>VS Code</strong> or <strong>Sublime Text</strong> for editing.</li>
+    <li>Preview your site by opening <code>index.html</code> in your browser.</li>
+    <li>Host your final project on a premium hosting provider (not free hosting).</li>
+  </ul>
+
+  <h2>🙋 Need Help?</h2>
+  <p>If you have questions, feel free to contact support or visit our documentation online (if applicable).</p>
+
+  <p><strong>– Launchly Team</strong></p>
+</body>
+</html>
